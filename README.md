@@ -59,7 +59,7 @@ Lab-desenvolvimento-04/
 │                           #         abas PT/EN, formulário + EmailJS
 │
 ├── assets/
-└── README.md               # Este arquivo
+    └── README.md               # Este arquivo
 ```
 
 ---
