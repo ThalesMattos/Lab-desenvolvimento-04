@@ -58,7 +58,7 @@ Lab-desenvolvimento-04/
 │   └── main.js             # Lógica: navbar, menu mobile, typed effect,
 │                           #         abas PT/EN, formulário + EmailJS
 │
-├── assets/
+└── assets/
     └── README.md               # Este arquivo
 ```
 
