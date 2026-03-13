@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thales Mattos — Portfólio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS — Animate On Scroll -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">TM<span>.</span></a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about"       class="nav-link">Sobre Mim</a></li>
+          <li><a href="#projects"    class="nav-link">Projetos</a></li>
+          <li><a href="#experience"  class="nav-link">Experiências</a></li>
+          <li><a href="#contact"     class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Olá, eu sou</p>
+      <h1 class="hero-name">Thales Mattos</h1>
+      <h2 class="hero-role"><span class="typed-text" id="typed"></span><span class="cursor">|</span></h2>
+      <p class="hero-desc">
+        Engenheiro de Software com experiência em Java, Spring, Angular, Python e AWS —
+        construindo sistemas robustos e soluções de IA.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+        <a href="#contact"  class="btn btn-outline">Falar Comigo</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE MIM ===================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Sobre Mim</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Quem sou eu e onde quero chegar</p>
+
+      <div class="about-grid">
+        <div class="about-image" data-aos="fade-right">
+          <div class="about-photo-wrapper">
+            <img src="assets/profile.jpeg" alt="Foto de Thales Mattos" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+            <div class="about-photo-placeholder">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text" data-aos="fade-left" data-aos-delay="100">
+          <!-- Tabs PT / EN -->
+          <div class="lang-tabs">
+            <button class="lang-btn active" data-lang="pt">🇧🇷 Português</button>
+            <button class="lang-btn"        data-lang="en">🇺🇸 English</button>
+          </div>
+
+          <div class="lang-content" id="lang-pt">
+            <h3>Formação e Atuação</h3>
+            <p>
+              Sou estudante de <strong>Engenharia de Software na PUC Minas</strong>, com experiência
+              profissional em desenvolvimento back-end (Java 17 / Spring Boot), front-end (Angular),
+              SAP/ABAP e Inteligência Artificial aplicada (dubbing, voice cloning, lip-sync).
+            </p>
+            <h3>Interesses</h3>
+            <p>
+              Apaixonado por arquitetura de sistemas, IA generativa, open source e DevOps. Tenho
+              vivência prática com CI/CD (GitLab CI), Kubernetes, Helm, Ansible e AWS (S3, SageMaker).
+            </p>
+            <h3>Objetivos</h3>
+            <p>
+              Evoluir como Engenheiro de Software full-stack, contribuindo para produtos que
+              combinam robustez técnica, escalabilidade e impacto real no negócio.
+            </p>
+          </div>
+
+          <div class="lang-content hidden" id="lang-en">
+            <h3>Background & Field</h3>
+            <p>
+              Software Engineering student at <strong>PUC Minas</strong> with hands-on internship
+              experience in back-end (Java 17 / Spring Boot), front-end (Angular), SAP/ABAP enterprise
+              systems, and AI-powered products (dubbing, voice cloning, lip-sync).
+            </p>
+            <h3>Interests</h3>
+            <p>
+              Passionate about system architecture, generative AI, open source and DevOps. Practical
+              experience with CI/CD (GitLab CI), Kubernetes, Helm, Ansible and AWS (S3, SageMaker).
+              Fluent in English, native Portuguese, basic Spanish.
+            </p>
+            <h3>Goals</h3>
+            <p>
+              To grow as a full-stack Software Engineer, building products that combine technical
+              robustness, scalability and real business impact.
+            </p>
+          </div>
+
+          <div class="skills-grid" data-aos="fade-up" data-aos-delay="200">
+            <span class="skill-tag">Java 17</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">SAP / ABAP</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">AWS (S3, SageMaker)</span>
+            <span class="skill-tag">Docker / Kubernetes</span>
+            <span class="skill-tag">GitLab CI</span>
+            <span class="skill-tag">Agile / Scrum</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJETOS ===================== -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Projetos</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Linha do tempo — do mais antigo ao mais recente</p>
+
+      <div class="timeline">
+
+        <!-- Projeto 1 -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024</div>
+          <div class="timeline-card">
+            <div class="project-image-wrapper">
+              <img src="assets/project1.png" alt="Result Combinator Service" onerror="this.src='assets/placeholder.svg'" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Result Combinator Service</h3>
+              <p class="project-desc">
+                REST API que calcula o número máximo de combinações de pontuação para um placar de
+                futebol americano. Lógica central implementada com programação dinâmica, incluindo
+                edge cases onde pontuações não são alcançáveis.
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+              <a href="https://github.com/ThalesMattos/Result-Combinator-Service" target="_blank" rel="noopener" class="btn btn-sm">
+                <i class="fa-brands fa-github"></i> Ver no GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="timeline-item timeline-item-right" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024</div>
+          <div class="timeline-card">
+            <div class="project-image-wrapper">
+              <img src="assets/project2.png" alt="Email Service" onerror="this.src='assets/placeholder.svg'" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Email Service</h3>
+              <p class="project-desc">
+                Serviço de back-end para envio de e-mails via API simples, recebendo destinatário,
+                assunto e corpo da mensagem. Integrado ao Amazon SES para entrega confiável e escalável.
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">AWS SES</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+              <a href="https://github.com/ThalesMattos/Email-Service" target="_blank" rel="noopener" class="btn btn-sm">
+                <i class="fa-brands fa-github"></i> Ver no GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot timeline-dot-latest"></div>
+          <div class="timeline-date">2025</div>
+          <div class="timeline-card">
+            <div class="project-image-wrapper">
+              <img src="assets/project3.png" alt="SkillMatch" onerror="this.src='assets/placeholder.svg'" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">SkillMatch <span class="badge-new">Destaque</span></h3>
+              <p class="project-desc">
+                Projeto full-stack que conecta freelancers e clientes alinhando perfis e habilidades
+                às necessidades do negócio. Integra desenvolvimento web, programação modular e banco
+                de dados relacional.
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Java</span>
+              </div>
+              <a href="https://github.com/ThalesMattos/SkillMatch" target="_blank" rel="noopener" class="btn btn-sm">
+                <i class="fa-brands fa-github"></i> Ver no GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIÊNCIAS ===================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Experiências</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Trajetória profissional e acadêmica</p>
+
+      <div class="exp-timeline">
+
+        <div class="exp-item" data-aos="fade-up">
+          <div class="exp-dot"></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Estagiário de Engenharia de Software</h3>
+                <span class="exp-company"><i class="fa-solid fa-building"></i> dti digital</span>
+              </div>
+              <span class="exp-period"><i class="fa-regular fa-calendar"></i> Set 2025 – Atual</span>
+            </div>
+            <p class="exp-desc">
+              Manutenção de APIs REST em Java 17 / Spring Boot com PostgreSQL e versionamento de schema via
+              Liquibase. Evolução de frontends Angular com testes automatizados (JUnit / Mockito / Karma).
+              Operação de CI/CD com GitLab CI e suporte a deploys on-prem (Ansible) e Kubernetes (Helm),
+              colaborando em Agile Scrum com comunicação diária em inglês.
+            </p>
+            <div class="exp-tags">
+              <span class="tech-tag">Java 17</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Angular</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">GitLab CI</span>
+              <span class="tech-tag">Kubernetes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="exp-dot"></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Estagiário de IA / Engenharia de Software</h3>
+                <span class="exp-company"><i class="fa-solid fa-building"></i> Hotmart Company</span>
+              </div>
+              <span class="exp-period"><i class="fa-regular fa-calendar"></i> Fev 2025 – Jul 2025</span>
+            </div>
+            <p class="exp-desc">
+              Melhoria de um produto de dublagem para criadores, otimizando o pipeline de processamento
+              de vídeo/áudio e corrigindo problemas em produção. Aprimoramento da qualidade de voice
+              cloning e lip-sync. Liderou avaliação de P&D do IP_LAP — comparando fine-tuning específico
+              vs. modelo generalista e entregando recomendação baseada em dados para evolução do pipeline.
+            </p>
+            <div class="exp-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">AWS SageMaker</span>
+              <span class="tech-tag">Voice Cloning</span>
+              <span class="tech-tag">Lip-Sync</span>
+              <span class="tech-tag">P&D / IA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="exp-dot"></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Estagiário de Engenharia de Software</h3>
+                <span class="exp-company"><i class="fa-solid fa-building"></i> Seidor Brasil</span>
+              </div>
+              <span class="exp-period"><i class="fa-regular fa-calendar"></i> Fev 2023 – Set 2024</span>
+            </div>
+            <p class="exp-desc">
+              Desenvolvimento de soluções SAP com ABAP — incluindo análise de demanda, especificações
+              técnicas e levantamento de requisitos. Suporte e troubleshooting de sistemas corporativos
+              para clientes como Vale, VLI, Localiza, EMS, Itambé e Grupo Cogna.
+            </p>
+            <div class="exp-tags">
+              <span class="tech-tag">SAP / ABAP</span>
+              <span class="tech-tag">ERP</span>
+              <span class="tech-tag">Análise de Requisitos</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Contato</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Vamos conversar? Estou disponível para oportunidades e projetos</p>
+
+      <div class="contact-grid">
+
+        <!-- Ícones de contato -->
+        <div class="contact-links" data-aos="fade-right">
+          <h3>Me encontre em</h3>
+
+          <a href="mailto:thalescarvalho622@gmail.com" class="contact-link" aria-label="E-mail">
+            <div class="contact-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-link-text">
+              <span class="contact-link-label">E-mail</span>
+              <span class="contact-link-value">thalescarvalho622@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="https://wa.me/5531987314029" target="_blank" rel="noopener" class="contact-link" aria-label="WhatsApp">
+            <div class="contact-icon whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="contact-link-text">
+              <span class="contact-link-label">WhatsApp</span>
+              <span class="contact-link-value">+55 (31) 98731-4029</span>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/thalesedu/" target="_blank" rel="noopener" class="contact-link" aria-label="LinkedIn">
+            <div class="contact-icon linkedin-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="contact-link-text">
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">linkedin.com/in/thalesedu</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/ThalesMattos" target="_blank" rel="noopener" class="contact-link" aria-label="GitHub">
+            <div class="contact-icon github-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="contact-link-text">
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-value">github.com/ThalesMattos</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Formulário -->
+        <div class="contact-form-wrapper" data-aos="fade-left" data-aos-delay="100">
+          <h3>Envie uma mensagem</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="from_name">Nome <span class="required">*</span></label>
+              <input type="text" id="from_name" name="from_name" placeholder="Seu nome completo" required />
+              <span class="form-error" id="error-name"></span>
+            </div>
+            <div class="form-group">
+              <label for="reply_to">E-mail <span class="required">*</span></label>
+              <input type="email" id="reply_to" name="reply_to" placeholder="seu@email.com" required />
+              <span class="form-error" id="error-email"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+              <span class="form-error" id="error-message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              <span id="btn-text"><i class="fa-solid fa-paper-plane"></i> Enviar Mensagem</span>
+              <span id="btn-loading" class="hidden"><i class="fa-solid fa-spinner fa-spin"></i> Enviando...</span>
+            </button>
+            <div id="form-feedback" class="form-feedback hidden"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Desenvolvido com <i class="fa-solid fa-heart" style="color: var(--accent)"></i> por
+        <strong>Thales Mattos</strong> &mdash; 2026
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com/ThalesMattos"             target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/thalesedu/"      target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:thalescarvalho622@gmail.com"          aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <a href="#home" class="back-to-top" aria-label="Voltar ao topo"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+  </footer>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
